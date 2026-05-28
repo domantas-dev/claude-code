@@ -735,6 +735,7 @@ body { font-family: var(--font-body); color: var(--hb-ink); -webkit-font-smoothi
     .journals { grid-template-columns: 1fr; }
     .journals__list { grid-template-columns: repeat(2, 1fr); }
   }
+@keyframes hb-marquee { from { transform: translateX(0) } to { transform: translateX(-33.333%) } }
 </style>
 </head>
 <body>
@@ -1532,7 +1533,6 @@ function PillStrip() {
       <div style={{ display: 'flex', gap: 0, animation: 'hb-marquee 38s linear infinite', width: 'max-content' }}>
         <Row /><Row /><Row />
       </div>
-      <style>@keyframes hb-marquee { from { transform: translateX(0) } to { transform: translateX(-33.333%) } }</style>
     </div>
   );
 }
